@@ -1,0 +1,9 @@
+class Parent
+{
+	public void test(){
+	System.out.println("This is from test()");
+	}
+	
+	int a=10;
+	
+}

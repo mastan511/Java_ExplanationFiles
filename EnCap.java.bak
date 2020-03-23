@@ -1,0 +1,5 @@
+class EnCap 
+{
+	private int i;
+
+}

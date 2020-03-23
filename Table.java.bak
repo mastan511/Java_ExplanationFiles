@@ -1,0 +1,17 @@
+import java.util.*;
+class Solution {
+
+
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int N = scanner.nextInt();
+        scanner.close();
+        for(int i=1;i<=20;i++){
+           
+            System.out.println(N+"X"+i+"="+N*i);
+
+        }
+    }
+}

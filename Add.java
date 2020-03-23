@@ -1,0 +1,14 @@
+import java.util.*;
+class Add 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter a Value :");
+		int a=sc.nextInt();
+		System.out.print("Enter b Value :");
+		int b=sc.nextInt();
+		int c=a+b;
+		System.out.println(c);
+	}
+}

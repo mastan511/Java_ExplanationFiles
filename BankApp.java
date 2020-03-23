@@ -1,0 +1,41 @@
+import java.util.*;
+class Bank
+{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of months:");
+		int time = sc.nextInt();
+		System.out.println("Enter the amount:");
+		int amount = sc.nextInt();
+		double sbirate = 0.07;
+		double hdfc = 0.08;
+		System.out.println("Choose the Bank:\n 1.Sbi \n 2.hdfc");
+		int choice = sc.nextInt();
+		switch(choice){
+		case 1:
+			double sbiIntrest = Bank.sbi(time,amount,sbirate);
+		System.out.println("As per the SBI norms = "+sbiIntrest);
+		break;
+		case 2:
+			double hdfcIntrest = Bank.hdfc(time,amount,hdfc);
+			System.out.println("As per the HDFC norms = "+hdfcIntrest);
+		break;
+
+		}
+	
+	
+	
+	}
+	public static double sbi(int time,int amount,double rate)
+	{
+			double intrest = amount*time*rate/100;
+			return intrest;
+	
+	}
+	public static double hdfc(int time,int amount,double rate)
+	{
+			double intrest = amount*time*rate/100;
+			return intrest;
+	
+	}
+}

@@ -1,0 +1,12 @@
+public class mastan 
+{
+		static{
+		System.out.println("from Sattic..");
+		}
+	public static void main(String[] args) 
+	{
+		System.out.print("main");
+		//test();
+	}
+}
+

@@ -1,0 +1,45 @@
+/*PrimeNumber
+===========
+2 factors*/
+import java.util.*;
+class Prime
+{
+	public static void main(String args[]){
+		Scanner sc =new Scanner(System.in);
+		int lb = sc.nextInt();
+		int ub = sc.nextInt();
+		for (int i=lb;i<=ub;i++)
+		{
+           boolean b=Prime.isPrime(i);
+		   if (b==true)
+		   {
+			   System.out.println(i);
+		   }
+		}
+		
+	}
+
+	public static boolean isPrime(int n){
+		int c = 0;
+		for (int i=1;i<=n;i++)
+		{
+			if (n%i == 0)
+			{
+				c++;
+			}
+		}
+
+		if (c == 2)
+		{
+			//System.out.print(n+" is Prime Number");
+			return true;
+		}else{
+		
+			//System.out.print(n+" is not a Prime Number");
+			return false;
+		}
+	
+	
+	}
+
+}
